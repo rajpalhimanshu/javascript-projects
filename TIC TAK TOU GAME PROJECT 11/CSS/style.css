@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    background: #D4D4D2;
+    overflow:hidden ;
+} */
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+}
+.GameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(231, 222, 240);
+}
+.info{
+    font-size: 2vw;
+    font-weight: 500;
+    transition: width 2 s ease-in-out;
+}
+.gameInfo{
+    margin-left: 1.2rem;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.gameInfo button{
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 950px)
+{
+    .GameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .Container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .info{
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,27 @@
+.row_margin{
+    margin: 8px 0;
+}
+.text_center{
+    text-align: center;
+    color: #fff;
+}
+
+.gc{
+    background-color:#FF9500
+}
+
+
+.hr{
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+}
+.double_width{
+    width: 144px;
+    padding-left:25px;
+    padding-right: 20px;
+    /* border-radius: 18%; */
+}
+.ecss{
+    width:132px;
+    /* border:2px solid red; */
+}

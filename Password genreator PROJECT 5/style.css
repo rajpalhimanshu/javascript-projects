@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D4D4D2;
+    min-height: 100vh;
+   
+
+}
+.container{
+    width:450px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 8px;
+}
+.container h2{
+    padding:1rem 1.75rem;
+    font-weight: 600;
+    font-size: 1.31rem;
+    border-bottom: 1px solid #d4dbe5;
+}
+.wrapper{
+    margin: 1.25rem 1.75rem;
+}
+.wrapper .input_box{
+    position: relative;
+}
+.wrapper .input_box input{
+    width: 100%;
+    height: 53px;
+    color: #000;
+    background: none;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1.4px;
+    border: 1px solid #aaa;
+    padding: 0 2.85rem 0 1rem;
+}
+
+.wrapper .input_box span{
+    color: #707070;
+    position: absolute;
+    right: 13px;
+    line-height: 53px;
+    cursor: pointer;
+}   
+
+
+.input_box span:hover{
+    color: #43A047 !important;
+}
+.wrapper .password_indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+
+.password_indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.password_indicator#weak::before{
+    width: 20%;
+    background: #e64a4a;
+}
+
+.password_indicator#medium::before{
+    width: 50%;
+    background: #f1c80b;
+}
+
+.password_indicator#strong::before{
+    width: 100%;
+    background: #43A047;
+}
+
+.wrapper .pass-length{
+    margin: 1.56rem 0 1.25rem;
+}
+
+.password_length .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.password_length input{
+    width: 100%;
+    height: 5px;
+}
+
+.pass-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.pass-settings .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+}
+
+.options .option:first-child{
+    pointer-events: none;
+}
+
+.options .option:first-child input{
+    opacity: 0.7;
+}
+
+.options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.options .option label{
+    cursor: pointer;
+    color: #4f4f4f;
+    padding-left: 0.63rem;
+}
+
+.wrapper .generate-btn{
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1c1c1c;
+    font-size: 1.06rem;
+    padding: 0.94rem 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0.94rem 0 1.3rem;
+}
